@@ -17,7 +17,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           const classType = heading === "INFECTED" ? styles.infected : heading === "RECOVERED" ? styles.recovered : styles.deaths;
           console.log(classType)
           return (
-            <Grid key={index} item xs={12} sm={4} md={3} ls={2}>
+            <Grid key={index} item xs={12} sm={4} md={3} lg={2}>
               <Card className={`${styles.Card} ${classType}`}  spacing={3} >
                 {confirmed ? (
                   <CardContent>
