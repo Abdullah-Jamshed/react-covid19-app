@@ -1,4 +1,3 @@
-import { StylesProvider } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { Line, Bar } from "react-chartjs-2";
 import styles from "../styles/Chart.module.css";

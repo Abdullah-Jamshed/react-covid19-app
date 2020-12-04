@@ -3,13 +3,11 @@
   padding: 10px;
   margin: 10px;
   box-shadow: none !important;
-  /* min-width: 200px !important; */
 }
 
 .icons {
   font-size: 40px;
   margin: 5;
-  /* color: rgba(70, 70, 70, 0.747); */
 }
 
 .infected {

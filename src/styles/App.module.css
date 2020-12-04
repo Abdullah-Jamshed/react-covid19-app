@@ -1,9 +1,8 @@
 .App {
-  /* text-align: center; */
   padding-top: 20px;
 }
 
-.location{
+.location {
   text-align: center;
   padding: 5px;
 }
@@ -12,18 +11,3 @@
   text-transform: uppercase;
   color: rgb(73, 73, 73);
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

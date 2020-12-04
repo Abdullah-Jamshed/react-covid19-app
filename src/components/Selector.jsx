@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, FormControl, InputLabel, Select, MenuItem, Grid, NativeSelect } from "@material-ui/core";
+import { makeStyles, FormControl, InputLabel, Select, MenuItem } from "@material-ui/core";
 import covidApi from "../api/covidApi";
 import styles from "../styles/Selector.module.css";
 import useWebAnimation, { bounceInLeft } from "@wellyshen/use-web-animations";
