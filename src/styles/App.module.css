@@ -1,6 +1,16 @@
 .App {
   /* text-align: center; */
-  padding-top: 30px; 
+  padding-top: 30px;
+}
+
+.location{
+  text-align: center;
+  padding: 5px;
+}
+
+.locationName {
+  text-transform: uppercase;
+  color: rgb(73, 73, 73);
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
