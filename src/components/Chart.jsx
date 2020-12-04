@@ -19,7 +19,7 @@ const Chart = ({ location, countryData: { confirmed, recovered, deaths } }) => {
 
   return (
     <Grid container className={styles.Chart} justify='center'>
-      <Grid className={styles.ChartContainer} item xs={12} md={8} lg={6} xl={5} >
+      <Grid className={styles.ChartContainer} item xs={12} md={8} lg={6} xl={5}>
         {location === "global" ? (
           dailyData.length && (
             <Line
@@ -58,6 +58,7 @@ const Chart = ({ location, countryData: { confirmed, recovered, deaths } }) => {
                   label: "People",
                   data: [confirmed.value, recovered.value, deaths.value],
                   backgroundColor: ["#d5f4f6", " #e0f3df", "#ffe5e4"],
+                  hoverBackgroundColor: ["rgba(63, 200, 218, 0.747)", " rgba(45, 182, 136, 0.747)", "rgba(255, 62, 62, 0.747)"],
                 },
               ],
             }}

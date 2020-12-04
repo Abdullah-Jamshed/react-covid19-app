@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
 import CountUp from "react-countup";
 import styles from "../styles/Card.module.css";
+import useWebAnimation, { fadeIn } from "@wellyshen/use-web-animations";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   const detailBoxes = [
@@ -10,14 +11,16 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     { heading: "RECOVERED", value: recovered },
     { heading: "DEATHS", value: deaths },
   ];
+
+  const { ref } = useWebAnimation({ ...fadeIn });
   return (
-    <div>
+    <div ref={ref}>
       <Grid container justify='center'>
         {detailBoxes.map(({ heading, value }, index) => {
           const classType = heading === "INFECTED" ? styles.infected : heading === "RECOVERED" ? styles.recovered : styles.deaths;
           return (
             <Grid key={index} item xs={12} sm={4} md={3} lg={2}>
-              <Card className={`${styles.Card} ${classType}`}  spacing={3} >
+              <Card className={`${styles.Card} ${classType}`} spacing={3}>
                 {confirmed ? (
                   <CardContent>
                     {heading === "INFECTED" ? (
