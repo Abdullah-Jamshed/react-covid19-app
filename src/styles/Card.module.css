@@ -1,4 +1,35 @@
 .Card {
+  text-align: center;
   padding: 10px;
   margin: 10px;
+  box-shadow: none !important;
+  /* min-width: 200px !important; */
+}
+
+.icons {
+  font-size: 40px;
+  margin: 5;
+  /* color: rgba(70, 70, 70, 0.747); */
+}
+
+.infected {
+  background-color: #d5f4f6 !important;
+}
+.infected i {
+  color: rgba(63, 200, 218, 0.747) !important;
+}
+
+.recovered {
+  background-color: #e0f3df !important;
+}
+.recovered i {
+  color: rgba(45, 182, 136, 0.747) !important;
+}
+
+.deaths {
+  background-color: #ffe5e4 !important;
+}
+
+.deaths i {
+  color: rgba(255, 62, 62, 0.747) !important;
 }

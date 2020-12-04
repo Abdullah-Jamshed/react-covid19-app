@@ -3,6 +3,7 @@ import styles from "./styles/App.module.css";
 import covidApi from "./api/covidApi";
 import Card from "./components/Cards";
 import Selector from "./components/Selector";
+import Header from "./components/Header";
 
 const App = () => {
   const [data, setData] = useState({});
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <div className={styles.App}>
+      <Header />
       <Card data={data} />
       <Selector location={location} setLocation={setLocation} />
     </div>

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles, FormControl, InputLabel, Select, MenuItem } from "@material-ui/core";
+import { makeStyles, FormControl, InputLabel, Select, MenuItem, Grid, NativeSelect } from "@material-ui/core";
 import covidApi from "../api/covidApi";
+import styles from "../styles/Selector.module.css";
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 200,
+    width: 240,
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -31,8 +32,8 @@ const Selector = ({ location, setLocation }) => {
   }, []);
 
   return (
-    <div>
-      <FormControl variant='outlined' className={classes.formControl}>
+    <div className={styles.Selector}>
+      <FormControl variant='outlined' className={classes.formControl} >
         <InputLabel id='demo-simple-select-outlined-label'>Country</InputLabel>
         <Select labelId='demo-simple-select-outlined-label' id='demo-simple-select-outlined' value={location} onChange={handleChange} label='Country'>
           <MenuItem value='global'>Global</MenuItem>
