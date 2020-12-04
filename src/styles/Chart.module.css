@@ -1,0 +1,9 @@
+.Chart {
+    margin-top: 20px;
+}
+
+.ChartContainer {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px 1px #e7e5e561;
+  box-shadow: 0 0 10px 1px #e7e5e561;
+}

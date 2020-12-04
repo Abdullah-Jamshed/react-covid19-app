@@ -5,6 +5,7 @@ import Card from "./components/Cards";
 import Selector from "./components/Selector";
 import Header from "./components/Header";
 import Location from "./components/Location";
+import Chart from "./components/Chart";
 
 const App = () => {
   const [data, setData] = useState({});
@@ -28,6 +29,7 @@ const App = () => {
       <Location location={location} />
       <Card data={data} />
       <Selector location={location} setLocation={setLocation} />
+      <Chart />
     </div>
   );
 };

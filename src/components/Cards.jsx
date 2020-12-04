@@ -15,7 +15,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
       <Grid container justify='center'>
         {detailBoxes.map(({ heading, value }, index) => {
           const classType = heading === "INFECTED" ? styles.infected : heading === "RECOVERED" ? styles.recovered : styles.deaths;
-          console.log(classType)
           return (
             <Grid key={index} item xs={12} sm={4} md={3} lg={2}>
               <Card className={`${styles.Card} ${classType}`}  spacing={3} >
