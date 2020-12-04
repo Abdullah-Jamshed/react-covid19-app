@@ -29,7 +29,7 @@ const App = () => {
       <Location location={location} />
       <Card data={data} />
       <Selector location={location} setLocation={setLocation} />
-      <Chart />
+      <Chart location={location} countryData={data} />
     </div>
   );
 };
