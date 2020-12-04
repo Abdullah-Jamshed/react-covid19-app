@@ -17,10 +17,9 @@ const Chart = ({ location, countryData: { confirmed, recovered, deaths } }) => {
     fetchDailyData();
   }, []);
 
-  console.log(location);
   return (
     <Grid container className={styles.Chart} justify='center'>
-      <Grid className={styles.ChartContainer} item xs={12} md={7}>
+      <Grid className={styles.ChartContainer} item xs={12} md={8} lg={6} xl={5} >
         {location === "global" ? (
           dailyData.length && (
             <Line
